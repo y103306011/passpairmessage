@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.nccu.mis.passpair.HomePage"
+    tools:showIn="@layout/app_bar_home_page">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageHome"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:layout_gravity="left|top"
+                android:src="@drawable/image"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#f1e6e6fa"/>
+
+            <com.roughike.bottombar.BottomBar
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/BottombarHome"
+                android:layout_marginTop="150dp">
+
+            </com.roughike.bottombar.BottomBar>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="謝秉學"
+                android:id="@+id/txtNameHome"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageHome"
+                android:layout_toEndOf="@+id/imageHome"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/txtPostsHome"
+                android:layout_toRightOf="@+id/imageHome"
+                android:layout_below="@+id/txtNameHome"
+                android:text="9  Posts"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/txtFriendsHome"
+                android:text="10  Posts"
+                android:layout_alignTop="@+id/txtPostsHome"
+                android:layout_alignRight="@+id/button"
+                android:layout_alignEnd="@+id/button"
+                android:layout_marginRight="39dp"
+                android:layout_marginEnd="34dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txtNameHome"
+                android:id="@+id/button"
+                android:background="@drawable/btn_edit_home"
+                android:text="edit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageHome"
+                android:layout_below="@+id/txtPostsHome"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="Love is not free,the price is your heart"
+                android:textSize="20dp"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Replace_Home_Fragment"
+                android:layout_below="@+id/BottombarHome">
+            </FrameLayout>
+
+
+
+
+</RelativeLayout>
