@@ -67,6 +67,9 @@
             android:name=".FriendMail"
             android:label="@string/title_activity_friend_mail"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Chat.ChatDialogActivity" />
+        <activity android:name=".Chat.ListUsersActivity" />
+        <activity android:name=".Chat.ChatMessageActivity"></activity>
     </application>
 
 </manifest>

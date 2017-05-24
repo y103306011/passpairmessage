@@ -89,6 +89,9 @@
             android:name="edu.nccu.mis.passpair.FriendMail"
             android:label="@string/title_activity_friend_mail"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="edu.nccu.mis.passpair.Chat.ChatDialogActivity" />
+        <activity android:name="edu.nccu.mis.passpair.Chat.ListUsersActivity" />
+        <activity android:name="edu.nccu.mis.passpair.Chat.ChatMessageActivity" />
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"

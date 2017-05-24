@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -73,6 +74,7 @@ public class ManuFragment extends Fragment {
         v = inflater.inflate(R.layout.fragment_manu, container, false);
 
         final String MyUID = this.getArguments().getString("ManuUID").toString();
+
 
         ImageButton call = (ImageButton)v.findViewById(R.id.callmanuhome);
         call.setOnClickListener(new View.OnClickListener() {
